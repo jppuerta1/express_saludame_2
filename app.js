@@ -3,7 +3,8 @@ const app = express ()
 
 app.get('/makers/:name',(req,res)=>{
     const name = req.params.name;
-    res.send(`<h1 style="text-transform:capitalize;">Hola ${name}!</h1>`)
+
+    res.send(`<h1>hola ${name.toUpperCase()}!</h1>`)
 })
 
 app.listen (3000,()=>console.log('listening on port 3000'))
